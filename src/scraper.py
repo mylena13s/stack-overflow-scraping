@@ -40,7 +40,7 @@ while url and page < max_pages:
             continue
         seen.add(link)
 
-        stats = q.select('s-post-summary--stats-item-number')
+        stats = q.select('.s-post-summary--stats-item-number')
 
         def to_int(s):
             s = (s or '').strip()
